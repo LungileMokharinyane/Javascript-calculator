@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+<h1 id="heading" onclick="changeText()">JavaScript</h1>
+<p id="addition"></p>
+
+<script>
+addNumbers(5, 10);
+
+    function changeText(){
+        if(document.getElementById("heading").innerHTML=='JavaScript'){
+            document.getElementById("heading").innerHTML='Lungile is awesome'
+        }else{
+                document.getElementById("heading").innerHTML = 'JavaScript'};       
+    }
+
+
+        function addNumbers(numb1, numb2){
+                document.getElementById("addition").innerHTML = numb1 * numb2;
+        }
+
+</script>
+
+    </body>
+</html>
